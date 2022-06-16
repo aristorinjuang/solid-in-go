@@ -10,10 +10,6 @@ type Member struct {
 }
 
 func (m *Member) AddShape(s shape.Shape) {
-	if !user.HasPermission(m, s) {
-		return
-	}
-
 	m.Repo.AddShape(m, s)
 }
 
