@@ -13,12 +13,12 @@ func (m *Member) AddShape(s shape.Shape) {
 	m.Repo.AddShape(m, s)
 }
 
-func (m *Member) ShapeCircumferences() float64 {
-	return m.Repo.ShapeCircumferences(m)
+func (m *Member) ShapePerimeters() float64 {
+	return m.Repo.ShapePerimeters(m)
 }
 
-func (m *Member) AverageShapeCircumference() float64 {
-	return m.Repo.ShapeCircumferences(m) / float64(len(m.Repo.Shapes(m)))
+func (m *Member) AverageShapePerimeter() float64 {
+	return m.Repo.ShapePerimeters(m) / float64(len(m.Repo.Shapes(m)))
 }
 
 func NewMember(r user.Repository) *Member {

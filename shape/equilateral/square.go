@@ -14,6 +14,6 @@ func (s *Square) Area() float64 {
 	return math.Pow(s.side, 2)
 }
 
-func (s *Square) Circumference() float64 {
+func (s *Square) Perimeter() float64 {
 	return 4 * s.side
 }

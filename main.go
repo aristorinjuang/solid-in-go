@@ -32,7 +32,7 @@ func main() {
 	s3.SetA(6)
 	s3.SetB(7)
 	fmt.Println("s3.Area()", s3.Area())
-	fmt.Println("s3.Circumference()", s3.Circumference())
+	fmt.Println("s3.Perimeter()", s3.Perimeter())
 
 	var u2 premium.PremiumUser = premium.NewMember(db)
 	u2.AddShape(s1)
@@ -41,6 +41,6 @@ func main() {
 
 	fmt.Println("u2.AverageShapeArea()", u2.AverageShapeArea())
 	fmt.Println("u2.ShapeAreas()", u2.ShapeAreas())
-	fmt.Println("u2.AverageShapeCircumference()", u2.AverageShapeCircumference())
-	fmt.Println("u2.ShapeCircumferences()", u2.ShapeCircumferences())
+	fmt.Println("u2.AverageShapePerimeter()", u2.AverageShapePerimeter())
+	fmt.Println("u2.ShapePerimeters()", u2.ShapePerimeters())
 }
